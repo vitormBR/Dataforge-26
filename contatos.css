@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    color: #006633;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+header p {
+    color: #666;
+    font-size: 1rem;
+}
+
+main {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.pesquisa input {
+    width: 600px;
+    max-width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.campi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.campus {
+    background: white;
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.campus:hover {
+    transform: translateY(-5px);
+}
+
+.campus h2 {
+    color: #006633;
+    margin-bottom: 15px;
+}
+
+.campus p {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .campus {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
