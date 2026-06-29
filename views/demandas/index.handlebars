@@ -1,0 +1,26 @@
+<h1>Demandas de Materiais</h1>
+
+<form action="/demandas" method="GET">
+  <input type="text" name="busca" placeholder="Buscar por título...">
+  <select name="area">
+    <option value="">Todas as áreas</option>
+    <option value="Química">Química</option>
+    <option value="Informática">Informática</option>
+    <option value="Mecânica">Mecânica</option>
+    <option value="Eletrônica">Eletrônica</option>
+    <option value="Infraestrutura">Infraestrutura</option>
+  </select>
+  <button type="submit">Filtrar</button>
+</form>
+
+{{#each demandas}}
+<div class="card">
+  <h3>{{titulo}}</h3>
+  <p>{{campus}} | {{area}} | {{status}}</p>
+  <p>{{descricao}}</p>
+  <a href="/demandas/editar/{{id}}">Editar</a>
+  <form action="/demandas/deletar/{{id}}" method="POST" style="display:inline">
+    <button type="submit">Deletar</button>
+  </form>
+</div>
+{{/each}}

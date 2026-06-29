@@ -1,0 +1,34 @@
+<h1>Editar Demanda</h1>
+
+<form action="/demandas/atualizar/{{demanda.id}}" method="POST">
+  <label>Título</label>
+  <input type="text" name="titulo" value="{{demanda.titulo}}" required>
+
+  <label>Área</label>
+  <select name="area" required>
+    <option value="Química" {{#if (eq demanda.area 'Química')}}selected{{/if}}>Química</option>
+    <option value="Informática" {{#if (eq demanda.area 'Informática')}}selected{{/if}}>Informática</option>
+    <option value="Mecânica" {{#if (eq demanda.area 'Mecânica')}}selected{{/if}}>Mecânica</option>
+    <option value="Eletrônica" {{#if (eq demanda.area 'Eletrônica')}}selected{{/if}}>Eletrônica</option>
+    <option value="Infraestrutura" {{#if (eq demanda.area 'Infraestrutura')}}selected{{/if}}>Infraestrutura</option>
+  </select>
+
+  <label>Campus</label>
+  <input type="text" name="campus" value="{{demanda.campus}}" required>
+
+  <label>Descrição</label>
+  <textarea name="descricao">{{demanda.descricao}}</textarea>
+
+  <label>Itens</label>
+  <input type="text" name="itens" value="{{demanda.itens}}">
+
+  <label>Status</label>
+  <select name="status">
+    <option value="aberta" {{#if (eq demanda.status 'aberta')}}selected{{/if}}>Aberta</option>
+    <option value="em-andamento" {{#if (eq demanda.status 'em-andamento')}}selected{{/if}}>Em andamento</option>
+    <option value="concluida" {{#if (eq demanda.status 'concluida')}}selected{{/if}}>Concluída</option>
+  </select>
+
+  <button type="submit">Salvar</button>
+  <a href="/demandas">Cancelar</a>
+</form>

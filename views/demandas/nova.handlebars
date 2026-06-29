@@ -1,0 +1,28 @@
+<h1>Nova Demanda</h1>
+
+<form action="/demandas/criar" method="POST">
+  <label>Título</label>
+  <input type="text" name="titulo" placeholder="Ex: Equipamentos de Laboratório" required>
+
+  <label>Área</label>
+  <select name="area" required>
+    <option value="">Selecione uma área</option>
+    <option value="Química">Química</option>
+    <option value="Informática">Informática</option>
+    <option value="Mecânica">Mecânica</option>
+    <option value="Eletrônica">Eletrônica</option>
+    <option value="Infraestrutura">Infraestrutura</option>
+  </select>
+
+  <label>Campus Solicitante</label>
+  <input type="text" name="campus" placeholder="Ex: IFPE Recife" required>
+
+  <label>Descrição</label>
+  <textarea name="descricao" placeholder="Descreva a necessidade..."></textarea>
+
+  <label>Itens Solicitados</label>
+  <input type="text" name="itens" placeholder="Ex: Béqueres, Pipetas...">
+
+  <button type="submit">Criar Demanda</button>
+  <a href="/demandas">Cancelar</a>
+</form>
