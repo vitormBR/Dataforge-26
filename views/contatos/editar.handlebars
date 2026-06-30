@@ -1,1 +1,37 @@
+<h1>Editar Contato</h1>
 
+<form action="/contatos/atualizar/{{contato.id}}" method="POST">
+
+    <label>Campus</label>
+    <input
+        type="text"
+        name="campus"
+        value="{{contato.campus}}"
+        required
+    >
+
+    <label>Telefone</label>
+    <input
+        type="text"
+        name="telefone"
+        value="{{contato.telefone}}"
+        required
+    >
+
+    <label>E-mail</label>
+    <input
+        type="email"
+        name="email"
+        value="{{contato.email}}"
+        required
+    >
+
+    <button type="submit">
+        Salvar Alterações
+    </button>
+
+    <a href="/contatos">
+        Cancelar
+    </a>
+
+</form>
