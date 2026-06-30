@@ -1,58 +1,53 @@
-<header>
-    <h1>Contatos dos Campus do IFPE</h1>
-    <p>Encontre rapidamente os contatos dos campus aqui!</p>
+<h1>Contatos dos Campi</h1>
 
-    <a href="/contatos/novo">
-        <button>Novo Contato</button>
-    </a>
-</header>
+<p>Consulte, cadastre, edite e exclua os contatos dos campi do IFPE.</p>
 
-<main>
+<a href="/contatos/novo">
+    <button>Novo Contato</button>
+</a>
 
-    <div class="pesquisa">
-        <input
-            type="text"
-            id="pesquisa"
-            placeholder="🔍 Pesquisar campus..."
-        >
-    </div>
+<br><br>
 
-    <div class="campi">
+<input
+    type="text"
+    id="pesquisa"
+    placeholder="Pesquisar campus..."
+>
 
-        {{#each contatos}}
+<br><br>
 
-        <div class="campus">
+<div class="cards">
 
-            <h2>🏫 {{campus}}</h2>
+    {{#each contatos}}
 
-            <p>📞 {{telefone}}</p>
+    <div class="campus">
 
-            <p>✉️ {{email}}</p>
+        <h2>{{campus}}</h2>
 
-            <div class="acoes">
+        <p><strong>Telefone:</strong> {{telefone}}</p>
 
-                <a href="/contatos/editar/{{id}}">
-                    <button class="editar">
-                        Editar
-                    </button>
-                </a>
+        <p><strong>E-mail:</strong> {{email}}</p>
 
-                <form action="/contatos/deletar/{{id}}" method="POST">
+        <div class="acoes">
 
-                    <button class="excluir" type="submit">
-                        Excluir
-                    </button>
+            <a href="/contatos/editar/{{id}}">
+                <button>Editar</button>
+            </a>
 
-                </form>
+            <form action="/contatos/deletar/{{id}}" method="POST">
 
-            </div>
+                <button type="submit">
+                    Excluir
+                </button>
+
+            </form>
 
         </div>
 
-        {{/each}}
-
     </div>
 
-</main>
+    <br>
 
-<script src="/js/contatos.js"></script>
+    {{/each}}
+
+</div>
