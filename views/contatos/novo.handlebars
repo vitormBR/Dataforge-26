@@ -2,19 +2,44 @@
 
 <form action="/contatos/criar" method="POST">
 
-  <label>Campus:</label><br>
-  <input type="text" name="campus" required><br><br>
+    <p>
+        <label for="campus">Campus</label><br>
+        <input
+            type="text"
+            id="campus"
+            name="campus"
+            required
+        >
+    </p>
 
-  <label>Telefone:</label><br>
-  <input type="text" name="telefone" required><br><br>
+    <p>
+        <label for="telefone">Telefone</label><br>
+        <input
+            type="text"
+            id="telefone"
+            name="telefone"
+            required
+        >
+    </p>
 
-  <label>E-mail:</label><br>
-  <input type="email" name="email" required><br><br>
+    <p>
+        <label for="email">E-mail</label><br>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required
+        >
+    </p>
 
-  <button type="submit">Salvar</button>
+    <button type="submit">
+        Salvar
+    </button>
+
+    <a href="/contatos">
+        <button type="button">
+            Cancelar
+        </button>
+    </a>
 
 </form>
-
-<br>
-
-<a href="/contatos">Voltar</a>
