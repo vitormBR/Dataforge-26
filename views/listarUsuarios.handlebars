@@ -10,7 +10,7 @@
 
     <h1>Usuários Cadastrados</h1>
 
-    <a href="/novo">
+    <a href="/usuarios/novo">
         <button>Novo Usuário</button>
     </a>
 
@@ -39,11 +39,11 @@
 
             <td>
 
-                <a href="/editar/{{id}}">
+                <a href="/usuarios/editar/{{id}}">
                     <button>Editar</button>
                 </a>
 
-                <form action="/deletar/{{id}}" method="POST" style="display:inline;">
+                <form action="/usuarios/deletar/{{id}}" method="POST" style="display:inline;">
 
                     <button type="submit">
                         Excluir
