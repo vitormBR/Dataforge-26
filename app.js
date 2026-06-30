@@ -24,11 +24,18 @@ sequelize.sync({ force: false }).then(() => {
   console.log('Banco de dados sincronizado!')
 })
 
+// Rotas
 const demandasRoutes = require('./routes/demandas')
-app.use('/demandas', demandasRoutes)
+const contatoRoutes = require('./routes/contatoRoutes')
 
+app.use('/demandas', demandasRoutes)
+app.use('/contatos', contatoRoutes)
+
+// Página inicial
 app.get('/', (req, res) => {
-  res.redirect('/demandas')
+  res.redirect('/contatos')
+  // Se preferirem manter Demandas como tela inicial, use:
+  // res.redirect('/demandas')
 })
 
 app.listen(3000, () => {
