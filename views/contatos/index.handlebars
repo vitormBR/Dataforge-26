@@ -1,0 +1,53 @@
+<h1>Contatos dos Campi</h1>
+
+<p>Consulte, cadastre, edite e exclua os contatos dos campi do IFPE.</p>
+
+<a href="/contatos/novo">
+    <button>Novo Contato</button>
+</a>
+
+<br><br>
+
+<input
+    type="text"
+    id="pesquisa"
+    placeholder="Pesquisar campus..."
+>
+
+<br><br>
+
+<div class="cards">
+
+    {{#each contatos}}
+
+    <div class="campus">
+
+        <h2>{{campus}}</h2>
+
+        <p><strong>Telefone:</strong> {{telefone}}</p>
+
+        <p><strong>E-mail:</strong> {{email}}</p>
+
+        <div class="acoes">
+
+            <a href="/contatos/editar/{{id}}">
+                <button>Editar</button>
+            </a>
+
+            <form action="/contatos/deletar/{{id}}" method="POST">
+
+                <button type="submit">
+                    Excluir
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    {{/each}}
+
+</div>

@@ -1,1 +1,45 @@
+<h1>Novo Contato</h1>
 
+<form action="/contatos/criar" method="POST">
+
+    <p>
+        <label for="campus">Campus</label><br>
+        <input
+            type="text"
+            id="campus"
+            name="campus"
+            required
+        >
+    </p>
+
+    <p>
+        <label for="telefone">Telefone</label><br>
+        <input
+            type="text"
+            id="telefone"
+            name="telefone"
+            required
+        >
+    </p>
+
+    <p>
+        <label for="email">E-mail</label><br>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required
+        >
+    </p>
+
+    <button type="submit">
+        Salvar
+    </button>
+
+    <a href="/contatos">
+        <button type="button">
+            Cancelar
+        </button>
+    </a>
+
+</form>
