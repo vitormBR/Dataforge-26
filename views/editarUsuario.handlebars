@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Usuário</title>
+</head>
+
+<body>
+
+    <h1>Editar Usuário</h1>
+
+    <form action="/atualizar/{{usuario.id}}" method="POST">
+
+        <label>Nome:</label><br>
+        <input
+            type="text"
+            name="nome"
+            value="{{usuario.nome}}"
+            required>
+
+        <br><br>
+
+        <label>Email:</label><br>
+        <input
+            type="email"
+            name="email"
+            value="{{usuario.email}}"
+            required>
+
+        <br><br>
+
+        <label>Senha:</label><br>
+        <input
+            type="password"
+            name="senha"
+            value="{{usuario.senha}}"
+            required>
+
+        <br><br>
+
+        <label>Matrícula:</label><br>
+        <input
+            type="text"
+            name="matricula"
+            value="{{usuario.matricula}}"
+            required>
+
+        <br><br>
+
+        <label>Campus:</label><br>
+
+        <select name="campus" required>
+
+            <option value="{{usuario.campus}}" selected>
+                {{usuario.campus}}
+            </option>
+
+            <option value="Abreu e Lima">Abreu e Lima</option>
+            <option value="Afogados da Ingazeira">Afogados da Ingazeira</option>
+            <option value="Barreiros">Barreiros</option>
+            <option value="Belo Jardim">Belo Jardim</option>
+            <option value="Cabo de Santo Agostinho">Cabo de Santo Agostinho</option>
+            <option value="Caruaru">Caruaru</option>
+            <option value="Garanhuns">Garanhuns</option>
+            <option value="Igarassu">Igarassu</option>
+            <option value="Ipojuca">Ipojuca</option>
+            <option value="Jaboatão dos Guararapes">Jaboatão dos Guararapes</option>
+            <option value="Olinda">Olinda</option>
+            <option value="Palmares">Palmares</option>
+            <option value="Paulista">Paulista</option>
+            <option value="Pesqueira">Pesqueira</option>
+            <option value="Recife">Recife</option>
+            <option value="Vitória de Santo Antão">Vitória de Santo Antão</option>
+
+        </select>
+
+        <br><br>
+
+        <button type="submit">
+            Salvar Alterações
+        </button>
+
+    </form>
+
+    <br>
+
+    <a href="/">
+        Voltar
+    </a>
+
+</body>
+
+</html>
