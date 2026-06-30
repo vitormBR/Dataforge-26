@@ -2,36 +2,47 @@
 
 <form action="/contatos/atualizar/{{contato.id}}" method="POST">
 
-    <label>Campus</label>
-    <input
-        type="text"
-        name="campus"
-        value="{{contato.campus}}"
-        required
-    >
+    <p>
+        <label for="campus">Campus</label><br>
+        <input
+            type="text"
+            id="campus"
+            name="campus"
+            value="{{contato.campus}}"
+            required
+        >
+    </p>
 
-    <label>Telefone</label>
-    <input
-        type="text"
-        name="telefone"
-        value="{{contato.telefone}}"
-        required
-    >
+    <p>
+        <label for="telefone">Telefone</label><br>
+        <input
+            type="text"
+            id="telefone"
+            name="telefone"
+            value="{{contato.telefone}}"
+            required
+        >
+    </p>
 
-    <label>E-mail</label>
-    <input
-        type="email"
-        name="email"
-        value="{{contato.email}}"
-        required
-    >
+    <p>
+        <label for="email">E-mail</label><br>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            value="{{contato.email}}"
+            required
+        >
+    </p>
 
     <button type="submit">
         Salvar Alterações
     </button>
 
     <a href="/contatos">
-        Cancelar
+        <button type="button">
+            Cancelar
+        </button>
     </a>
 
 </form>
