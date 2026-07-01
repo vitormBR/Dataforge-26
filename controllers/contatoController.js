@@ -2,9 +2,26 @@ const Contato = require('../models/Contato')
 
 // Listar todos os contatos
 const listar = async (req, res) => {
-  const contatos = await Contato.findAll({ raw: true })
-  res.render('contatos/index', { contatos })
+  const { pesquisa } = req.query
+  const where = {}
+
+  if (pesquisa) {
+    where.campus = {
+      [require('sequelize').Op.like]: `%${pesquisa}%`
+    }
+  }
+
+  const contatos = await Contato.findAll({
+    where,
+    raw: true
+  })
+
+  res.render('contatos/index', {
+    contatos,
+    pesquisa
+  })
 }
+
 
 // Mostrar formulário de novo contato
 const novoContato = (req, res) => {
