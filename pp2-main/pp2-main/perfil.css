@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #eef3f8;
+}
+
+.container {
+  width: 700px;
+  margin: 50px auto;
+}
+
+h1 {
+  color: #16385c;
+  margin-bottom: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #16385c;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+}
+
+.dados p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+strong {
+  color: #16385c;
+}

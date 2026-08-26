@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  background: #eef3f8;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #0a2540;
+  padding: 25px;
+  position: fixed;
+}
+
+.sidebar h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: #163b63;
+}
+
+.conteudo {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  padding: 40px;
+}
+
+.conteudo h1 {
+  color: #0a2540;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  color: #0a2540;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.card a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background: #0a2540;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.card a:hover {
+  background: #163b63;
+}

@@ -1,0 +1,24 @@
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela thead {
+  background: #0a2540;
+  color: white;
+}
+
+.tabela th,
+.tabela td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabela tbody tr:nth-child(even) {
+  background: #f7f9fc;
+}
+
+.tabela tbody tr:hover {
+  background: #eef5ff;
+}

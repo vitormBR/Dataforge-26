@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Professores</title>
+
+    <link rel="stylesheet" href="cadastro-professores.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Cadastro de Professores</h1>
+
+      <form id="form-professor">
+        <input type="text" id="nome" placeholder="Nome do professor" required />
+
+        <input type="text" id="cpf" placeholder="CPF" required />
+
+        <input type="text" id="disciplina" placeholder="Disciplina" required />
+
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <hr />
+
+      <h2>Professores Cadastrados</h2>
+
+      <table class="tabela-professores">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Disciplina</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+
+        <tbody id="lista-professores"></tbody>
+      </table>
+    </div>
+
+    <script src="cadastro-professores.js"></script>
+  </body>
+</html>

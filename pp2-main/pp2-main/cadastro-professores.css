@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0f172a;
+}
+
+.container {
+  width: 1000px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #0a2540;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin: 25px 0;
+  color: #0a2540;
+}
+
+form {
+  display: flex;
+  gap: 15px;
+}
+
+form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+form input:focus {
+  border-color: #0a2540;
+}
+
+form button {
+  width: 160px;
+  background: #0a2540;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+form button:hover {
+  background: #163b63;
+}
+
+hr {
+  margin: 30px 0;
+}
+
+.tabela-professores {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-professores thead {
+  background: #0a2540;
+  color: white;
+}
+
+.tabela-professores th,
+.tabela-professores td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabela-professores tbody tr:nth-child(even) {
+  background: #f7f9fc;
+}
+
+.tabela-professores tbody tr:hover {
+  background: #eef5ff;
+}
+
+.btn-editar {
+  background: #f39c12;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.btn-editar:hover {
+  background: #d68910;
+}
+
+.btn-excluir {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-excluir:hover {
+  background: #bb2d3b;
+}

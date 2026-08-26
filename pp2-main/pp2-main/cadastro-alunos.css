@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0f172a;
+}
+
+.container {
+  width: 1000px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 15px;
+  padding: 35px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #0a2540;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #0a2540;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+form input:focus {
+  border-color: #0a2540;
+  outline: none;
+}
+
+form button {
+  width: 170px;
+  background: #0a2540;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #12375c;
+}
+
+hr {
+  margin: 30px 0;
+}
+
+.tabela-alunos {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-alunos thead {
+  background: #0a2540;
+  color: white;
+}
+
+.tabela-alunos th,
+.tabela-alunos td {
+  padding: 15px;
+  text-align: center;
+}
+
+.tabela-alunos tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.tabela-alunos tbody tr:nth-child(even) {
+  background: #f7f7f7;
+}
+
+.tabela-alunos tbody tr:hover {
+  background: #eef5ff;
+}
+
+.btn-editar {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.btn-editar:hover {
+  background: #0b5ed7;
+}
+
+.btn-excluir {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-excluir:hover {
+  background: #bb2d3b;
+}
